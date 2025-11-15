@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Haven - Find Your Perfect Companion</title>
+    <link rel="stylesheet" href="horse site/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-horse"></i>
+                <span>SILKENO Horse Haven</span>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#horses" class="nav-link">Available Horses</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#process" class="nav-link">Adoption Process</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Professional Header -->
+    <header class="professional-header" id="professional-header">
+        <div class="header-background" id="header-background"></div>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <div class="header-text">
+                <h1 class="header-title">SILKENO Horse Haven</h1>
+                <p class="header-subtitle">Professional Horse Rescue & Adoption Center</p>
+                <p class="header-description">Dedicated to providing exceptional care and finding loving homes for horses in need</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-primary" onclick="openImageUpload('header')">Set Header Image</button>
+                <button class="btn btn-secondary" onclick="openImageUpload('hero')">Set Hero Image</button>
+                <div class="rotating-indicator">
+                    <i class="fas fa-images"></i>
+                    <span>Auto-rotating backgrounds</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background" id="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Find Your Perfect Horse Companion</h1>
+                <p class="hero-subtitle">Professional Horse Adoption Services</p>
+                <p class="hero-description">Give a loving home to horses in need. Browse our carefully selected horses and start your adoption journey with expert guidance.</p>
+                <div class="hero-buttons">
+                    <a href="#horses" class="btn btn-primary">View Available Horses</a>
+                    <a href="#process" class="btn btn-secondary">Learn About Adoption</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Horses Rescued</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">400+</span>
+                    <span class="stat-label">Successful Adoptions</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years of Service</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Horses Section -->
+    <section id="horses" class="horses-section">
+        <div class="container">
+            <h2>Available Horses</h2>
+            <div class="filters">
+                <select id="breed-filter" class="filter-select">
+                    <option value="">All Breeds</option>
+                    <option value="thoroughbred">Thoroughbred</option>
+                    <option value="quarter-horse">Quarter Horse</option>
+                    <option value="arabian">Arabian</option>
+                    <option value="mustang">Mustang</option>
+                    <option value="appaloosa">Appaloosa</option>
+                </select>
+                <select id="age-filter" class="filter-select">
+                    <option value="">All Ages</option>
+                    <option value="young">Young (2-5 years)</option>
+                    <option value="adult">Adult (6-15 years)</option>
+                    <option value="senior">Senior (16+ years)</option>
+                </select>
+                <select id="size-filter" class="filter-select">
+                    <option value="">All Sizes</option>
+                    <option value="pony">Pony</option>
+                    <option value="light">Light Horse</option>
+                    <option value="heavy">Heavy Horse</option>
+                </select>
+                <select id="price-filter" class="filter-select">
+                    <option value="">All Prices</option>
+                    <option value="low">Under $2,000</option>
+                    <option value="medium">$2,000 - $3,000</option>
+                    <option value="high">Over $3,000</option>
+                </select>
+            </div>
+            <div class="horses-grid" id="horses-grid">
+                <!-- Horses will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Horse Haven</h2>
+                    <p> SILKENO Horse Haven is dedicated to finding loving homes for horses in need. We rescue, rehabilitate, and rehome horses of all breeds and ages, ensuring they find their perfect forever families.</p>
+                    <p>Our mission is to provide a second chance for horses who have been abandoned, neglected, or surrendered, and to match them with caring adopters who can provide the love and care they deserve.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Horses Rescued</p>
+                        </div>
+                        <div class="stat">
+                            <h3>400+</h3>
+                            <p>Successful Adoptions</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Years of Service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <h2>Adoption Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Browse Available Horses</h3>
+                    <p>Explore our available horses and learn about their personalities, needs, and backgrounds.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Submit Application</h3>
+                    <p>Fill out our adoption application with your experience, facilities, and plans for the horse.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Meet & Greet</h3>
+                    <p>Schedule a visit to meet your potential horse companion and see if it's a good match.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Home Visit</h3>
+                    <p>We'll visit your facility to ensure it meets the horse's needs and safety requirements.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Adoption</h3>
+                    <p>Complete the adoption paperwork and welcome your new horse companion home!</p>
+                </div>
+            </div>
+            <div class="process-cta">
+                <a href="#contact" class="btn btn-primary">Start Your Application</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Horse Haven Lane<br>Rural County, CA 90210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>680575978</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>skhorseadoption@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Tuesday - Sunday<br>10:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                             <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="adoption">Adoption Inquiry</option>
+                                <option value="volunteer">Volunteer</option>
+                                <option value="donation">Donation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-horse"></i>
+                        <span>Horse Haven</span>
+                    </div>
+                    <p>Dedicated to finding loving homes for horses in need.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#horses">Available Horses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#process">Adoption Process</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Horse Care Guide</a></li>
+                        <li><a href="#">Training Tips</a></li>
+                        <li><a href="#">Health Information</a></li>
+                        <li><a href="#">Volunteer Opportunities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support Us</h4>
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Sponsor a Horse</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Foster</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Horse Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Upload Modal -->
+    <div id="image-upload-modal" class="image-upload-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="upload-modal-title">Upload Background Image</h3>
+                <span class="modal-close" onclick="closeImageUpload()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="upload-section">
+                    <label for="image-upload" class="upload-label">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span>Choose an image file</span>
+                        <small>Recommended: 1920x1080 or larger, JPG/PNG</small>
+                    </label>
+                    <input type="file" id="image-upload" accept="image/*" onchange="handleImageUpload(event)">
+                </div>
+                <div class="preview-section" id="preview-section" style="display: none;">
+                    <h4>Image Preview</h4>
+                    <div class="image-preview">
+                        <img id="preview-image" src="" alt="Preview">
+                    </div>
+                    <div class="preview-actions">
+                        <button class="btn btn-primary" onclick="applyImage()">Apply Image</button>
+                        <button class="btn btn-secondary" onclick="resetImage()">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
